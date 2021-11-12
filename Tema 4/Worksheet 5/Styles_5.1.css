@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Helvetica;
+    src: url("C:\Users\Javier\AppData\Local\Microsoft\Windows\Fonts\HelveticaNeueLTStdTh.otf");
+}
+
+body{
+    font-family: 'Helvetica Neue LTS Std', 'Helvetica', 'sans';
+    background-color: snow;
+}
+
+input[type=text]{
+    border-radius: 5px 5px 5px 5px;
+}
+
+input:focus{
+    border-color: rgb(64, 192, 224);
+    border-width: 4px;
+}
