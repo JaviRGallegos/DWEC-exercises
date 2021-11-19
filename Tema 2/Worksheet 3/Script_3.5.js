@@ -1,9 +1,9 @@
 function repetidos(cadena){
     cadena = cadena.split("");
     repes = [];
-    for (let i = 0; i <= cadena.length; i++){
-        if (repes.includes(cadena[i]) == false){
-            repes.push(cadena.splice[i]);
+    for (let i = 0; i < cadena.length; i++){
+        if (repes.includes(cadena[i]) == true){
+            repes.push(cadena.splice(cadena[i]));
         }
         else{
             continue;
@@ -12,7 +12,7 @@ function repetidos(cadena){
     return repes;
 }
 
-cadena = 'Aloha';
+cadena = 'aloha';
 
 
 console.log(repetidos(cadena));

@@ -51,11 +51,15 @@ function ERROR(err) {
 }
 
 var platform = new H.service.Platform({
-    'apikey': 'efjXR5_WEj2iVOx3za268sk1vf0sjLEfcJSnJxBKuL0'
+    'apikey': 'ARMPwIV7Fj-gBBZiR8jDxeeuvchRRapQHooPojezptA'
 });
 
+var defaultLayers;
+
+window.onload = function(){
+
 // Obtain the default map types from the platform object:
-var defaultLayers = platform.createDefaultLayers();
+defaultLayers = platform.createDefaultLayers();
 
 
 
@@ -66,3 +70,4 @@ navigator.geolocation.getCurrentPosition(success, ERROR, options);
 //navigator.geolocation.watchPosition(success, ERROR);
 
 //APARTADO 5
+}
